@@ -17,10 +17,10 @@ app.include_router(v1, prefix="/v1")
 @app.get("/status", include_in_schema=False)
 def get_status():
     """Get status of messaging server."""
-    return ({"status":  "it's alive"})
+    return ({"status": "it's alive"})
 
 
 @app.get("/error", include_in_schema=False)
-def get_status():
+def get_error():
     """Get error of messaging server."""
     raise
